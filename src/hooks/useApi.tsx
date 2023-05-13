@@ -10,7 +10,7 @@ const useApi = () => {
     return robots;
   }, []);
 
-  return getRobots;
+  return { getRobots };
 };
 
 export default useApi;
