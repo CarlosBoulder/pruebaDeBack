@@ -4,7 +4,7 @@ interface RobotsStructure {
   speed: number;
   endurance: number;
   created: string;
-  img_source: string;
+  imgSource: string;
 }
 
 export default RobotsStructure;
