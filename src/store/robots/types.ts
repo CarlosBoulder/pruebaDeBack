@@ -1,5 +1,5 @@
 interface RobotsStructure {
-  id: string;
+  _id: string;
   name: string;
   speed: number;
   endurance: number;

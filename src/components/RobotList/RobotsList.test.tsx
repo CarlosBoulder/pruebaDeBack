@@ -7,7 +7,7 @@ describe("Given a RobotsList component", () => {
     test("Then it should show a list of tasks with one card that contains the text 'War Eagle'", () => {
       const expectedText = robotsMock[0].name;
 
-      render(<RobotList />);
+      render(<RobotList robots={robotsMock} />);
       const titleText = screen.getByText(expectedText);
 
       expect(titleText).toBeInTheDocument();

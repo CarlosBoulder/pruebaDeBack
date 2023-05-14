@@ -1,18 +1,17 @@
-import robotsMock from "../../mocks/robotsMock";
+import RobotsStructure from "../../store/robots/types";
+import RobotCard from "../RobotCard/RobotCard";
 import RobotListStyled from "./RobotsListStyled";
 
-const RobotList = (): JSX.Element => {
+interface RobotsListProps {
+  robots: RobotsStructure[];
+}
+
+const RobotList = ({ robots }: RobotsListProps): JSX.Element => {
   return (
     <RobotListStyled>
-      {robotsMock.map((robot) => (
-        <li key={robot.id}>
-          <h2>{robot.name}</h2>
-          <img
-            alt={`${robot.name} portrait`}
-            src={robot.imgSource}
-            width={300}
-            height={300}
-          />
+      {robots.map((robot) => (
+        <li key={robot._id}>
+          <RobotCard robot={robot} />
         </li>
       ))}
     </RobotListStyled>

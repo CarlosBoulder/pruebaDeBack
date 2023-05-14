@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useApi from "../../hooks/useApi";
-import { useAppDispatch } from "../../store";
+import { useAppDispatch, useAppSelector } from "../../store";
 import { loadRobotsActionCreator } from "../../store/robots/robotsSlice";
 import RobotsList from "../RobotList/RobotsList";
 
@@ -11,19 +11,16 @@ const App = (): JSX.Element => {
 
   useEffect(() => {
     (async () => {
-      try {
-        const robots = await getRobots();
-        dispatch(loadRobotsActionCreator(robots));
-      } catch {
-        return;
-      }
+      const robots = await getRobots();
+      dispatch(loadRobotsActionCreator(robots.robots));
     })();
   }, [dispatch, getRobots]);
 
+  const robotsList = useAppSelector((state) => state.robotStore.robots);
   return (
     <>
       <h1>Bird Robots</h1>
-      <RobotsList />
+      <RobotsList robots={robotsList} />
     </>
   );
 };
