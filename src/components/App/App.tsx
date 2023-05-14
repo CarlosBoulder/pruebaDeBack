@@ -21,10 +21,10 @@ const App = (): JSX.Element => {
   }, [dispatch, getRobots]);
 
   return (
-    <>
+    <div className="container">
       <h1>Bird Robots</h1>
       <RobotsList />
-    </>
+    </div>
   );
 };
 
