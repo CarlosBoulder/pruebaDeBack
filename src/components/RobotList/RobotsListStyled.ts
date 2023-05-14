@@ -4,7 +4,8 @@ const RobotListStyled = styled.ul`
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 35px;
+  min-width: 300px;
 `;
 
 export default RobotListStyled;
