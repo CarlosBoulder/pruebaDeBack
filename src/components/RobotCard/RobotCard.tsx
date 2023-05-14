@@ -10,7 +10,7 @@ const RobotCard = ({
   return (
     <section>
       <img src={imgSource} alt={name} />
-      <h2>Name: {name}</h2>
+      <h2>{name}</h2>
       <span>Speed: {speed}</span>
       <span>Speed: {endurance}</span>
       <span>Created: {created}</span>
