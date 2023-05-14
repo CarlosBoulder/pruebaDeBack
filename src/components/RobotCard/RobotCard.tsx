@@ -8,13 +8,13 @@ const RobotCard = ({
   robot: { name, imgSource, created, endurance, speed },
 }: RobotCardProps): JSX.Element => {
   return (
-    <section>
-      <img src={imgSource} alt={name} />
+    <article className="robot-card">
+      <img src={imgSource} alt={name} width={285} height={285} />
       <h2>{name}</h2>
-      <span>Speed: {speed}</span>
-      <span>Endurance: {endurance}</span>
-      <span>Created: {created}</span>
-    </section>
+      <p>Speed: {speed}</p>
+      <p>Endurance: {endurance}</p>
+      <p>Created: {created}</p>
+    </article>
   );
 };
 

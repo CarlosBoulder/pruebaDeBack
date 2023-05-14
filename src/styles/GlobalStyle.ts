@@ -32,11 +32,13 @@ p {
 h1{
   font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 h2{
   font-size: 1.5rem;
   color: #E52575;
+  padding-block: 10px;
 }
 
 ul {
@@ -64,6 +66,7 @@ a {
 
 img {
   max-width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .container {
@@ -71,7 +74,13 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    gap: 20px;
+    gap: 35px;
+}
+
+.robot-card{
+  background-color: #1D1226;
+  padding-bottom: 20px;
+  border-radius: 10px;
 }
 `;
 
