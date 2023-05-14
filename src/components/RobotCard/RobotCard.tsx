@@ -9,7 +9,7 @@ const RobotCard = ({
 }: RobotCardProps): JSX.Element => {
   return (
     <article className="robot-card">
-      <img src={imgSource} alt={name} width={285} height={285} />
+      <img rel="preload" src={imgSource} alt={name} width={285} height={285} />
       <h2>{name}</h2>
       <p>Speed: {speed}</p>
       <p>Endurance: {endurance}</p>
