@@ -18,10 +18,10 @@ const App = (): JSX.Element => {
 
   const robotsList = useAppSelector((state) => state.robotStore.robots);
   return (
-    <>
+    <div className="container">
       <h1>Bird Robots</h1>
       <RobotsList robots={robotsList} />
-    </>
+    </div>
   );
 };
 

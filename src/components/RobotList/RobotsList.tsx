@@ -8,7 +8,7 @@ interface RobotsListProps {
 
 const RobotList = ({ robots }: RobotsListProps): JSX.Element => {
   return (
-    <RobotListStyled>
+    <RobotListStyled className="robot-list">
       {robots.map((robot) => (
         <li key={robot._id}>
           <RobotCard robot={robot} />
