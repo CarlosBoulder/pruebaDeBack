@@ -3,7 +3,7 @@ import RobotListStyled from "./RobotsListStyled";
 
 const RobotList = (): JSX.Element => {
   return (
-    <RobotListStyled>
+    <RobotListStyled className="robot-list">
       {robotsMock.map((robot) => (
         <li key={robot.id}>
           <h2>{robot.name}</h2>
