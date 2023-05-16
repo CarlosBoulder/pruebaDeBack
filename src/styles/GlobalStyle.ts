@@ -54,11 +54,6 @@ button {
   cursor: pointer;
 }
 
-input {
-  font: inherit;
-  border: 2px solid;
-}
-
 a {
   text-decoration: none;
   color: inherit;
